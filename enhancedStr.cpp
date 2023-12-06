@@ -127,4 +127,6 @@ namespace enhancedStr
                 return false;
         return true;
     }
+
+    const std::string emptyString;
 }
