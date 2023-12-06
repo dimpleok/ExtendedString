@@ -39,7 +39,7 @@ namespace enhancedStr
     {
         std::string whitespaces (" \t\f\v\n\r");
         size_t pos = s.find_first_not_of(whitespaces);
-        if (pos != std::string::npos ) {
+        if (pos != std::string::npos) {
             s.erase(0, pos);
         } else {
             s.clear();
@@ -77,7 +77,7 @@ namespace enhancedStr
 
     bool islower(const std::string& s)
     {
-      return std::all_of( std::begin(s), std::end(s),
+      return std::all_of(std::begin(s), std::end(s),
                  [] (char c) { return ::islower(c); });
     }
     
