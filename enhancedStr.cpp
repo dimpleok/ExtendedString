@@ -11,29 +11,27 @@ namespace enhancedStr
     void swapcase(std::string &s)
     {
         std::transform(std::begin(s),
-                        std::end(s),
-                        std::begin(s),
-                        [](char c){ return c^32; }
+                       std::end(s),
+                       std::begin(s),
+                       [](char c){ return c^32; }
                       );
     }
 
     void lower(std::string &s)
     {
         std::transform(std::begin(s),
-                        std::end(s),
-                        std::begin(s),
-                        ::tolower
-                        //[](char c){ return c|32; }
+                       std::end(s),
+                       std::begin(s),
+                       ::tolower
                       );
     }
 
     void upper(std::string &s)
     {
         std::transform(std::begin(s),
-                        std::end(s),
-                        std::begin(s),
-                        ::toupper
-                        //[](char c){ return c & 0xdf; }
+                       std::end(s),
+                       std::begin(s),
+                       ::toupper
                       );
     }
 
