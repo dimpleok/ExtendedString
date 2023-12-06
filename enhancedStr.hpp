@@ -36,5 +36,7 @@ namespace enhancedStr
     bool endswith(const std::string& s, const std::string subs);  
     
     bool iequals(const std::string& a, const std::string& b);
+
+    extern const std::string emptyString;
 }
 #endif
