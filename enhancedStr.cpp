@@ -4,6 +4,8 @@
 #include <sstream>
 #include <vector>
 
+#include "enhancedStr.hpp"
+
 namespace enhancedStr
 {
     void swapcase(std::string &s)
