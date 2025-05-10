@@ -95,12 +95,12 @@ namespace enhancedStr
                  [] (char c) { return ::isalnum(c); });
     }
     
-    bool startswith(const std::string& s, const std::string subs)
+    bool startswith(const std::string& s, const std::string& subs)
     {
        return s.find(subs) == 0;
     }
 
-    bool endswith(const std::string& s, const std::string subs)
+    bool endswith(const std::string& s, const std::string& subs)
     {
        size_t pos = s.rfind(subs);
        return pos != std::string::npos &&
