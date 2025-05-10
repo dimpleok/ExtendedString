@@ -31,9 +31,9 @@ namespace enhancedStr
     
     bool isalnum (const std::string& s);
     
-    bool startswith(const std::string& s, const std::string subs);
+    bool startswith(const std::string& s, const std::string& subs);
 
-    bool endswith(const std::string& s, const std::string subs);  
+    bool endswith(const std::string& s, const std::string& subs);  
     
     bool iequals(const std::string& a, const std::string& b);
 
