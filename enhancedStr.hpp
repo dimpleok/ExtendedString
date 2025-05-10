@@ -5,19 +5,19 @@
 
 namespace enhancedStr
 {
-    void swapcase(std::string &s);
+    void swapcase(std::string& s);
 
-    void lower(std::string &s);
+    void lower(std::string& s);
 
-    void upper(std::string &s);
+    void upper(std::string& s);
 
-    void lstrip(std::string &s);
+    void lstrip(std::string& s);
 
-    void rstrip(std::string &s);
+    void rstrip(std::string& s);
 
-    void strip(std::string &s);
+    void strip(std::string& s);
 
-    void split(const std::string &s, 
+    void split(const std::string& s, 
                std::vector<std::string>& v, 
                char delim = ' ');
 
