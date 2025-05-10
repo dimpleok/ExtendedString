@@ -8,24 +8,24 @@
 
 namespace enhancedStr
 {
-    void swapcase(std::string &s)
+    void swapcase(std::string& s)
     {
         std::transform(std::begin(s), std::end(s), std::begin(s),
                        [](char c) { return c^32; }
                       );
     }
 
-    void lower(std::string &s)
+    void lower(std::string& s)
     {
         std::transform(std::begin(s), std::end(s), std::begin(s), ::tolower);
     }
 
-    void upper(std::string &s)
+    void upper(std::string& s)
     {
         std::transform(std::begin(s), std::end(s), std::begin(s), ::toupper);
     }
 
-    void lstrip(std::string &s)
+    void lstrip(std::string& s)
     {
         std::string whitespaces (" \t\f\v\n\r");
         size_t pos = s.find_first_not_of(whitespaces);
@@ -36,7 +36,7 @@ namespace enhancedStr
         }
     }
 
-    void rstrip(std::string &s)
+    void rstrip(std::string& s)
     {
         std::string whitespaces (" \t\f\v\n\r");
         size_t pos = s.find_last_not_of(whitespaces);
@@ -47,13 +47,13 @@ namespace enhancedStr
         }
     }
 
-    void strip(std::string &s)
+    void strip(std::string& s)
     {
        lstrip(s);
        rstrip(s);
     }
 
-    void split(const std::string &s, 
+    void split(const std::string& s, 
                std::vector<std::string>& v, 
                char delim)
     {
